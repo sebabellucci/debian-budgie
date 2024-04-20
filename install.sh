@@ -16,14 +16,14 @@ sudo apt update
 sudo apt upgrade -y
 
 
-sudo apt install xorg x11-utils budgie-desktop budgie-extras-common budgie-extras-daemon network-manager-gnome connman connman-gtk slim thunar 
-sudo apt install xinput xinit xdg-user-dirs policykit-1 blueman pulseaudio pavucontrol wget curl build-essential devscripts software-properties-common
-sudo apt install obsidian-icon-theme adwaita-icon-theme papirus-icon-theme papirus-icon-theme fonts-noto-color-emoji picom rofi
-sudo apt install htop neofetch screenfetch mintstick chromium mplayer mpv unzip flameshot ranger check nala nmap arandr alacritty gdebi
+sudo apt install xorg x11-utils budgie-desktop budgie-extras-common budgie-extras-daemon network-manager-gnome connman connman-gtk slim thunar -y
+sudo apt install xinput xinit xdg-user-dirs policykit-1 blueman pulseaudio pavucontrol wget curl build-essential devscripts software-properties-common -y
+sudo apt install obsidian-icon-theme adwaita-icon-theme papirus-icon-theme papirus-icon-theme fonts-noto-color-emoji picom rofi -y
+sudo apt install htop neofetch screenfetch mintstick chromium mplayer mpv unzip flameshot ranger check nala nmap arandr alacritty gdebi -y
 
 
 xdg-user-dirs-update
-sudo systemctl enable enable lightdm.service
+sudo systemctl enable slim.service
 
 cd $builddir
 mkdir -p ~/.config
